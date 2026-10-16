@@ -1,4 +1,4 @@
-/* CSS reset, dit niet aanpassen! */
+
 
 html {
   box-sizing: border-box;
@@ -6,123 +6,55 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-body { background-color: #47A1EF;
-    font-family: helvetica;
-  margin: 100;
+body {
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 50vh 50vh;
+  margin: 0;
   padding: 0;
   min-height: 100vh;
-   color: yellow;
-  
-   
-
-}
-h1 {
-  color: #00ff00;
-  text-align: center;
-}
-
-a:link { 
-color: rgb(216, 112, 112);
-background-color: #00ff00;
-text-decoration: wavy;
-size: 100%;
-
-    }
-    a:hover{
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-     }
-    
-#contactinformatie {
-  font-weight: bold;
-  background-color: salmon;
- 
-}
-#duimpje {
-    background-color: blue;
-    color: rgb(255, 0, 0);
-   
-    }
-    
-#uitverkocht {
-    font-size: larger;
-    text-align: center;
-    background-color: red;
-    color: azure;
-   } 
-
-#loremipsum {
-    font-size: larger;
-    font-style: initial;
-    color: pink;
-}
-
-
-
-#wikipedia {
-    background-color: yellow;
-    margin: 20PX;
-    padding: 20px;
-    border: 5px solid blue;
-    width: 95%;
-    height: 20%;
-    font-size: 1rem
-}
-
-
-h2{
-    color: red;
-    background-color: yellow;
-    font-family: Arial
-
-   
-}
-p { 
-  color: red;
-  
 }
 img {
-  max-width: 250%;
-  height: 200%;
-  text-align: center;
-  
+  max-width: 100%;
+  height: auto;
 }
 
-strong{
-    font-size: 50px;
+#linksboven{
+    background-color: aqua;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
-.chicken{
-    background-color: salmon;
+#linksonder {
+    background-color: rebeccapurple;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
 }
 
-#mybox{
-    width: 100vw;
-    /* background-color: pink; */
-    text-align: center;
+#fotoshow {
+    background-color: blue;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
- #plaatjetop40 {
-    text-align: right;
-    background-color: red;
-    background-image: url(img/afbeelding.avif);
-    background-size: cover;
-    
+
+ #fotoonder {
+    background-color: blueviolet;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
  }
 
- .menu {
-    background-color: aliceblue;
-    color: red;
+ #rechtsboven {
+    background-color: cornflowerblue;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
  }
 
-
+ #rechtsonder {
+    background-color: coral;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+ }
  
- #shows {
-  background-color: red;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: xx-large;
-  color: azure;
- }
-
+/* Hieronder mag je eigen CSS code */
